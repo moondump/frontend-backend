@@ -1,2 +1,2 @@
-web: cd backend && rails s
+web: cd backend && bundle exec rails s
 
