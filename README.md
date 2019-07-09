@@ -22,9 +22,10 @@ Putting the gemfiles there is definietly weird! It's only to trick Heroku.
 
 Manually take time to copy both the `Gemfile` files in order for Heroku to
 detect and install things correctly. You should still use the two `Gemfile`
-files inside the `backend` directory for your actual rails server on your own
-machine. If you make changes there make sure you copy the changes back up top
-so when Heroku reads them it installs the correct things.
+files (`Gemfile` and Gemfile.lock`) inside the `backend` directory for your
+actual rails server on your own machine. If you make changes there make sure
+you copy the changes back up top so when Heroku reads them it installs the
+correct things.
 
 The `Procfile` is a tiny configuration file that tells Heroku how to start
 running the web server. In this case we tell it to specicially `cd` into
